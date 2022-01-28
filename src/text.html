@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画一只哆啦A梦</title>
+</head>
+<body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    *::after{
+        box-sizing: border-box;
+    }
+    *::before{
+        box-sizing: border-box;
+    }
+    #buttons{
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        bottom: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #buttons>button{
+        padding: 0 10px;
+        color: #81c2f1;
+        border: 1px solid #dfecfe;
+        background-color: #dfecfe;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    #demo{
+        position: fixed;
+        height: 25vh;
+        bottom: 5px;
+        left:5px;
+        width: 100%;
+        padding: 0 15px;
+        overflow-y: auto;
+
+    }
+    #demo::-webkit-scrollbar{
+        display: none;
+    }
+    #demo2{
+        display: none;
+    }
+    #html{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72vh;
+    }
+</style>
+<!--demo是text文本-->
+<div id="demo"></div>
+
+<!--demo2是style样式-->
+<style id="demo2"></style>
+<div id="html">
+    <div class="background">
+        <div class="bigFace">
+            <div class="smallFace"></div>
+            <div class="eyes left">
+                <div class="eyesBlack left"></div>
+            </div>
+            <div class="eyes right">
+                <div class="eyesBlack right"></div>
+            </div>
+        </div>
+        <div class="nose"></div>
+        <div class="black"></div>
+        <div class="mouth"></div>
+        <div class="beard left">
+            <div class="lFirst"></div>
+            <div class="lSecond"></div>
+            <div class="lThird"></div>
+        </div>
+        <div class="beard right">
+            <div class="rFirst"></div>
+            <div class="rSecond"></div>
+            <div class="rThird"></div>
+        </div>
+        <div class="bellTape">
+            <div class="bell">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<script src="text.js"></script>
+</body>
+</html>
