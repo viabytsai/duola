@@ -172,7 +172,7 @@ const string =`
     height: 40px;
     border: 2px solid black;
     left: 50%;
-    margin-left: -15px;
+    margin-left: -20px;
     border-radius: 50%;
     background-color: #f6db84;
     overflow: hidden;
